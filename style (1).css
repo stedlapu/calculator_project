@@ -1,0 +1,87 @@
+/* Your Student CSS Styles */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://cdn.pixabay.com/photo/2022/03/23/15/00/comic-7087361_1280.png'); /* Set the background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.calculator {
+  border: 2px solid #333;
+  border-radius: 16px;
+  background: #000000ef; /* Set background color to transparent dark black */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.253);
+  padding: 20px;
+  color: #002699; /* Set text color to dark blue */
+  margin-left: 10px; /* Adjust margin to move calculator 10px to the left */
+}
+
+input {
+  width: 92%;
+  border: none;
+  padding: 16px;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 28px;
+  text-align: right;
+  color: #ffffff;
+}
+
+input::placeholder {
+  color: #ffffff;
+}
+
+button {
+  border: none;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #a4e4f0;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: -3px -3px 8px rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease;
+  border: 2px solid #ffffff; /* Add white circular border */
+  
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.equalBtn {
+  background-color: #fb7c14;
+}
+
+.operator {
+  color: #6dee0a;
+}
+
+/* Additional Styles for Square Root and Whole Square Buttons */
+.squareRootBtn,
+.wholeSquareBtn {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #002699; /* Set text color to dark blue */
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: -3px -3px 8px rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease;
+  border: 2px solid #ffffff; /* Add white circular border */
+}
+
+.squareRootBtn:hover,
+.wholeSquareBtn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
